@@ -24,14 +24,7 @@ class BankingSystem:
             
                 
         def reg(self):
-            name = ((str)(input(" Name :")))
-            email = ((str)(input("Email :")))
-            password = ((str)(input("Password :")))
-            re_enter_password = ((str)(input("Re-enter password :")))
-            self.check_if_password_correct(password, re_enter_password)
-            self.add_user(name, email, password)
-            self.about()
-   
+           
         def add_user(self,name, email, password):
             account_number = random.randrange(10**9, 10**10)
             account_balance = 0
@@ -47,7 +40,7 @@ class BankingSystem:
          
             email = ((str)(input("Email :")))
             password = ((str)(input(" Password :")))
-            self.check_if_user_exist(email, password)
+            
             self.about()
            
         # def check_if_user_exist(self, email, password):
